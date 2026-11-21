@@ -1,0 +1,641 @@
+{
+ "_comment": "Datasets of the two studies on real data as read by analysis/realdata_logistic_regression.py. Paths are relative to the folder given with --data. Development datasets: one .npz file each with the arrays X_train, y_train, X_test and y_test of the UCR archive. Independent evaluation: the .ts files of the sources (equal-length versions where the source provides them). The SHA-256 values are those of the files used by the authors.",
+ "development": {
+  "datasets": {
+   "ACSF1": {
+    "cached_path": "development/ACSF1.npz",
+    "classes": 10,
+    "expected_sha256": "6a1655a10016bd6d722271f225ad9c0bc95b26dbc524a3374ec5fc158f0d2725",
+    "length": 1460,
+    "test_cases": 100,
+    "train_cases": 100
+   },
+   "Adiac": {
+    "cached_path": "development/Adiac.npz",
+    "classes": 37,
+    "expected_sha256": "ace37a5799af793b18968a079b1d1dbca4674efc21d66ef07d19be15efb50ca0",
+    "length": 176,
+    "test_cases": 391,
+    "train_cases": 390
+   },
+   "ArrowHead": {
+    "cached_path": "development/ArrowHead.npz",
+    "classes": 3,
+    "expected_sha256": "c55211436330c77c042a9eef48196b1adb095f889373dd315ef7795941d4ae64",
+    "length": 251,
+    "test_cases": 175,
+    "train_cases": 36
+   },
+   "Beef": {
+    "cached_path": "development/Beef.npz",
+    "classes": 5,
+    "expected_sha256": "e6cb6fa721d809835cfc70f20bcd85163fbebca962c26456c66f0a5ccdab5799",
+    "length": 470,
+    "test_cases": 30,
+    "train_cases": 30
+   },
+   "Car": {
+    "cached_path": "development/Car.npz",
+    "classes": 4,
+    "expected_sha256": "3d73481b41a381b094fd079d0be95f033fc2a2bd33db693eac0f47bd81f1ab83",
+    "length": 577,
+    "test_cases": 60,
+    "train_cases": 60
+   },
+   "ChlorineConcentration": {
+    "cached_path": "development/ChlorineConcentration.npz",
+    "classes": 3,
+    "expected_sha256": "2e7fbf6d88cc077ade8b5802f9409483cc6586cfaf744612a02421fdbca1e09c",
+    "length": 166,
+    "test_cases": 3840,
+    "train_cases": 467
+   },
+   "CricketZ": {
+    "cached_path": "development/CricketZ.npz",
+    "classes": 12,
+    "expected_sha256": "ddd9608309922de84feab821650b7785b5868edc1d9282de8ebb563864811fc1",
+    "length": 300,
+    "test_cases": 390,
+    "train_cases": 390
+   },
+   "EOGVerticalSignal": {
+    "cached_path": "development/EOGVerticalSignal.npz",
+    "classes": 12,
+    "expected_sha256": "b40b34704465efa79a35461dda62cb61e68be25e4d7845b3b89b0bc4050d5a79",
+    "length": 1250,
+    "test_cases": 362,
+    "train_cases": 362
+   },
+   "FacesUCR": {
+    "cached_path": "development/FacesUCR.npz",
+    "classes": 14,
+    "expected_sha256": "58f87ee954abe72562c677161a84e7d044ee704e4b33cfe8d7170f060fd1866b",
+    "length": 131,
+    "test_cases": 2050,
+    "train_cases": 200
+   },
+   "Fish": {
+    "cached_path": "development/Fish.npz",
+    "classes": 7,
+    "expected_sha256": "fef1b37e4e8826e035453e2cf26ad4b06b80b8aaa2f9d24e9331cf1f81ffa9ec",
+    "length": 463,
+    "test_cases": 175,
+    "train_cases": 175
+   },
+   "FreezerRegularTrain": {
+    "cached_path": "development/FreezerRegularTrain.npz",
+    "classes": 2,
+    "expected_sha256": "77e02b81a4a7636dca86e2f0454e836e7e748b0bcafa4e760f933989681089cd",
+    "length": 301,
+    "test_cases": 2850,
+    "train_cases": 150
+   },
+   "Haptics": {
+    "cached_path": "development/Haptics.npz",
+    "classes": 5,
+    "expected_sha256": "93e99b89cb05f3667f608a7c3420a642be0e6c5243e1b45a09cced79dbcc0523",
+    "length": 1092,
+    "test_cases": 308,
+    "train_cases": 155
+   },
+   "InsectEPGRegularTrain": {
+    "cached_path": "development/InsectEPGRegularTrain.npz",
+    "classes": 3,
+    "expected_sha256": "62cef8806ad561025a5a9f2593e07f4f3e72bae3e2263c66840371ced73198c4",
+    "length": 601,
+    "test_cases": 249,
+    "train_cases": 62
+   },
+   "LargeKitchenAppliances": {
+    "cached_path": "development/LargeKitchenAppliances.npz",
+    "classes": 3,
+    "expected_sha256": "a2eb5b246494fa06cdd4d507bfd7c977eacec1858171f965d8566013d0a17802",
+    "length": 720,
+    "test_cases": 375,
+    "train_cases": 375
+   },
+   "Meat": {
+    "cached_path": "development/Meat.npz",
+    "classes": 3,
+    "expected_sha256": "1418e35a7b9db79df186154a057326c7b767978f765e6806b26dd46dfccd8ccf",
+    "length": 448,
+    "test_cases": 60,
+    "train_cases": 60
+   },
+   "MedicalImages": {
+    "cached_path": "development/MedicalImages.npz",
+    "classes": 10,
+    "expected_sha256": "656cb92aab39ad5cdf470de3dae3c1d2cef94940fe1df8db1f9b8318697fe475",
+    "length": 99,
+    "test_cases": 760,
+    "train_cases": 381
+   },
+   "MixedShapesSmallTrain": {
+    "cached_path": "development/MixedShapesSmallTrain.npz",
+    "classes": 5,
+    "expected_sha256": "35ae97425a1a9518657a02583e82924dfa28cf051c49c4e85869378ad638b996",
+    "length": 1024,
+    "test_cases": 2425,
+    "train_cases": 100
+   },
+   "NonInvasiveFetalECGThorax2": {
+    "cached_path": "development/NonInvasiveFetalECGThorax2.npz",
+    "classes": 42,
+    "expected_sha256": "5f18321f950000ab8488fcf273561c1ec138bdc786019bc8b1e5eff4e5ef6be9",
+    "length": 750,
+    "test_cases": 1965,
+    "train_cases": 1800
+   },
+   "OSULeaf": {
+    "cached_path": "development/OSULeaf.npz",
+    "classes": 6,
+    "expected_sha256": "d0e3e68a7a1f476b9b374c374e27138ed0cff200e0832e144d7e017993fa0629",
+    "length": 427,
+    "test_cases": 242,
+    "train_cases": 200
+   },
+   "Plane": {
+    "cached_path": "development/Plane.npz",
+    "classes": 7,
+    "expected_sha256": "a9ed3822edad5aead4035aeee734266c796780ced9dda28c9dd0d977ab7295ae",
+    "length": 144,
+    "test_cases": 105,
+    "train_cases": 105
+   },
+   "PowerCons": {
+    "cached_path": "development/PowerCons.npz",
+    "classes": 2,
+    "expected_sha256": "319bb70c7ad3e6626421c2163d6cff601ca1836087e62b66b72c9363a8dbe115",
+    "length": 144,
+    "test_cases": 180,
+    "train_cases": 180
+   },
+   "RefrigerationDevices": {
+    "cached_path": "development/RefrigerationDevices.npz",
+    "classes": 3,
+    "expected_sha256": "324b707939430e832933a2854df2a51a93d6a5e94904d3604c64e467f2462346",
+    "length": 720,
+    "test_cases": 375,
+    "train_cases": 375
+   },
+   "ScreenType": {
+    "cached_path": "development/ScreenType.npz",
+    "classes": 3,
+    "expected_sha256": "e6d2f25e7a2592ae00b776629edfca6a1bbd927bef8b4e16cae68f3cbb067eac",
+    "length": 720,
+    "test_cases": 375,
+    "train_cases": 375
+   },
+   "SemgHandMovementCh2": {
+    "cached_path": "development/SemgHandMovementCh2.npz",
+    "classes": 6,
+    "expected_sha256": "25c66d1f98d7140b177fae826428e8ea12074a1a7263ef1c43b7d2c466e5497c",
+    "length": 1500,
+    "test_cases": 450,
+    "train_cases": 450
+   },
+   "ShapesAll": {
+    "cached_path": "development/ShapesAll.npz",
+    "classes": 60,
+    "expected_sha256": "808c627889bfd57432a5935449059a54edf09d1144ff8763df0ced4429972e6e",
+    "length": 512,
+    "test_cases": 600,
+    "train_cases": 600
+   },
+   "SmallKitchenAppliances": {
+    "cached_path": "development/SmallKitchenAppliances.npz",
+    "classes": 3,
+    "expected_sha256": "c8692227a47ac6284cf4c9f7813e747b369300378eda715fb30658e1c84cf707",
+    "length": 720,
+    "test_cases": 375,
+    "train_cases": 375
+   },
+   "SwedishLeaf": {
+    "cached_path": "development/SwedishLeaf.npz",
+    "classes": 15,
+    "expected_sha256": "a40f710935d465a9c5a167d21176696fb1317abe646687a70d5bbb6c6373ae1e",
+    "length": 128,
+    "test_cases": 625,
+    "train_cases": 500
+   },
+   "SyntheticControl": {
+    "cached_path": "development/SyntheticControl.npz",
+    "classes": 6,
+    "expected_sha256": "f76d8586ec02e1afec1f1d55819f8ebafb299e92d36186aed720fe7762152aa3",
+    "length": 60,
+    "test_cases": 300,
+    "train_cases": 300
+   },
+   "Trace": {
+    "cached_path": "development/Trace.npz",
+    "classes": 4,
+    "expected_sha256": "10432e5111ff7f811c3105ed99ec7104c38409119a084caadf2b4e8b7d4f9077",
+    "length": 275,
+    "test_cases": 100,
+    "train_cases": 100
+   },
+   "UWaveGestureLibraryZ": {
+    "cached_path": "development/UWaveGestureLibraryZ.npz",
+    "classes": 8,
+    "expected_sha256": "96d03d5d5816671970d7832f61e230a45964bc4e902800828018e6697a171eb9",
+    "length": 315,
+    "test_cases": 3582,
+    "train_cases": 896
+   }
+  },
+  "order": [
+   "InsectEPGRegularTrain",
+   "LargeKitchenAppliances",
+   "MixedShapesSmallTrain",
+   "Beef",
+   "NonInvasiveFetalECGThorax2",
+   "EOGVerticalSignal",
+   "UWaveGestureLibraryZ",
+   "CricketZ",
+   "MedicalImages",
+   "Adiac",
+   "FacesUCR",
+   "ACSF1",
+   "ScreenType",
+   "FreezerRegularTrain",
+   "ChlorineConcentration",
+   "PowerCons",
+   "Meat",
+   "SyntheticControl",
+   "RefrigerationDevices",
+   "Haptics",
+   "ShapesAll",
+   "Trace",
+   "SemgHandMovementCh2",
+   "SwedishLeaf",
+   "OSULeaf",
+   "Car",
+   "Fish",
+   "Plane",
+   "SmallKitchenAppliances",
+   "ArrowHead"
+  ]
+ },
+ "independent": {
+  "AconityMINIPrinterLarge": {
+   "block": "Aconity",
+   "class_order": [
+    "0",
+    "1"
+   ],
+   "classes": 2,
+   "length": 300,
+   "test_bytes": 3330791,
+   "test_cases": 1184,
+   "test_path": "independent/AconityMINIPrinterLarge_TEST.ts",
+   "test_sha256": "3f69af20b34a746c8b2557468fde12376ff1bd3a021a326026e4500f053a72df",
+   "train_bytes": 6726716,
+   "train_cases": 2403,
+   "train_path": "independent/AconityMINIPrinterLarge_TRAIN.ts",
+   "train_sha256": "4b05b8b83496d8af3c6611d99a74ce8318b49fc0032222b82a60d5564c57e94b"
+  },
+  "AconityMINIPrinterSmall": {
+   "block": "Aconity",
+   "class_order": [
+    "0",
+    "1"
+   ],
+   "classes": 2,
+   "length": 300,
+   "test_bytes": 789285,
+   "test_cases": 292,
+   "test_path": "independent/AconityMINIPrinterSmall_TEST.ts",
+   "test_sha256": "407c4387867f400cda038c3ad980fd5fb686fcd44481199e4b77164c8e3f7007",
+   "train_bytes": 1633544,
+   "train_cases": 589,
+   "train_path": "independent/AconityMINIPrinterSmall_TRAIN.ts",
+   "train_sha256": "6e00fd46f7078ea477065fd8825d233adf76cb2768a6dee3d1b8b09ca8ef56f4"
+  },
+  "AllGestureWiimoteX": {
+   "block": "Wiimote",
+   "class_order": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 10,
+   "length": 500,
+   "test_bytes": 5895635,
+   "test_cases": 700,
+   "test_path": "independent/AllGestureWiimoteX_eq_TEST.ts",
+   "test_sha256": "a82cd17dc43e8e85f966908a222ebf49c24f12a43dfb6c6abb4adbd980fd3ff9",
+   "train_bytes": 2517301,
+   "train_cases": 300,
+   "train_path": "independent/AllGestureWiimoteX_eq_TRAIN.ts",
+   "train_sha256": "0a0dd1621692f744ead62b09d4fd2baf3a6e4d652afb850573f1b0877db2887f"
+  },
+  "AllGestureWiimoteY": {
+   "block": "Wiimote",
+   "class_order": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 10,
+   "length": 500,
+   "test_bytes": 5864096,
+   "test_cases": 700,
+   "test_path": "independent/AllGestureWiimoteY_eq_TEST.ts",
+   "test_sha256": "dd4e8237ecd80e4bf8a4bd7579c9338da8cab1aef8f67b2cffbd3bc24aec7c36",
+   "train_bytes": 2493519,
+   "train_cases": 300,
+   "train_path": "independent/AllGestureWiimoteY_eq_TRAIN.ts",
+   "train_sha256": "c857d15ee9b67feca06e359ca7d7087081eb48d3eb77a4340f1d2a18c1246d39"
+  },
+  "AllGestureWiimoteZ": {
+   "block": "Wiimote",
+   "class_order": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 10,
+   "length": 500,
+   "test_bytes": 5468985,
+   "test_cases": 700,
+   "test_path": "independent/AllGestureWiimoteZ_eq_TEST.ts",
+   "test_sha256": "2ca00195525389c43d40f1abdb09743a3e89f81f7aa4099ccf5bd58f955f6731",
+   "train_bytes": 2340949,
+   "train_cases": 300,
+   "train_path": "independent/AllGestureWiimoteZ_eq_TRAIN.ts",
+   "train_sha256": "8509324acf0446dda034807cbff17771a0e00033f0cc3de516a8bb78d292243c"
+  },
+  "AsphaltObstaclesUni": {
+   "block": "Asphalt",
+   "class_order": [
+    "raised_crosswalk",
+    "raised_markers",
+    "speed_bump",
+    "vertical_patch"
+   ],
+   "classes": 4,
+   "length": 736,
+   "test_bytes": 4666951,
+   "test_cases": 391,
+   "test_path": "independent/AsphaltObstaclesUni_eq_TEST.ts",
+   "test_sha256": "3d22b6b3e44090a8c66aa41bb9647e878abb48b968d089de993dbf33991b7977",
+   "train_bytes": 4663041,
+   "train_cases": 390,
+   "train_path": "independent/AsphaltObstaclesUni_eq_TRAIN.ts",
+   "train_sha256": "7bc2412131614f68beb555bb88694d6297e2f8e4d3556db52427d3371d22fad3"
+  },
+  "AsphaltPavementTypeUni": {
+   "block": "Asphalt",
+   "class_order": [
+    "cobblestone",
+    "dirt",
+    "flexible"
+   ],
+   "classes": 3,
+   "length": 2371,
+   "test_bytes": 46688127,
+   "test_cases": 1056,
+   "test_path": "independent/AsphaltPavementTypeUni_eq_TEST.ts",
+   "test_sha256": "e4d5eb3f4bd884a2d6c8b96c14a2e6ed91cf183f7a1f4a297b60b7e17707cd36",
+   "train_bytes": 46749300,
+   "train_cases": 1055,
+   "train_path": "independent/AsphaltPavementTypeUni_eq_TRAIN.ts",
+   "train_sha256": "2a9882cad755a53bb635700a20968a781c5ba94930e04bd7065e1ce8a933c843"
+  },
+  "AsphaltRegularityUni": {
+   "block": "Asphalt",
+   "class_order": [
+    "deteriorated",
+    "regular"
+   ],
+   "classes": 2,
+   "length": 4201,
+   "test_bytes": 61961352,
+   "test_cases": 751,
+   "test_path": "independent/AsphaltRegularityUni_eq_TEST.ts",
+   "test_sha256": "2c2e079e3351b2a5a241344bccc72134745779d0d9eb6bd2ef1049da782f9812",
+   "train_bytes": 61876329,
+   "train_cases": 751,
+   "train_path": "independent/AsphaltRegularityUni_eq_TRAIN.ts",
+   "train_sha256": "20dc054c97171ef082dcb4cc7df56fdb668626e826aa692ba6424d0d9a7b7c02"
+  },
+  "GesturePebbleZ1": {
+   "block": "Pebble",
+   "class_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "classes": 6,
+   "length": 455,
+   "test_bytes": 1031699,
+   "test_cases": 172,
+   "test_path": "independent/GesturePebbleZ1_eq_TEST.ts",
+   "test_sha256": "196980515e3fb98ba3a31c45daf8e93a3ed821dba981a4ae4e6d4a48ead74f66",
+   "train_bytes": 748027,
+   "train_cases": 132,
+   "train_path": "independent/GesturePebbleZ1_eq_TRAIN.ts",
+   "train_sha256": "47c061ad27fd62179ca526eac0ad6f4932542275c9f859dfe7b4d7e89e959e5a"
+  },
+  "GesturePebbleZ2": {
+   "block": "Pebble",
+   "class_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "classes": 6,
+   "length": 455,
+   "test_bytes": 933410,
+   "test_cases": 158,
+   "test_path": "independent/GesturePebbleZ2_eq_TEST.ts",
+   "test_sha256": "af8b4e6ccc4da794dacccb31ced308c88290cfc1cc25a6aa7b81bdab0b31566a",
+   "train_bytes": 846077,
+   "train_cases": 146,
+   "train_path": "independent/GesturePebbleZ2_eq_TRAIN.ts",
+   "train_sha256": "4e16cfd2f00895f695d934a7b201930d900d3dbbb6f92a1f6e8b2aaa67885d81"
+  },
+  "KeplerLightCurves": {
+   "block": "Kepler",
+   "class_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "classes": 7,
+   "length": 4767,
+   "test_bytes": 40431577,
+   "test_cases": 399,
+   "test_path": "independent/KeplerLightCurves_TEST.ts",
+   "test_sha256": "119d63dddfe5f1fa2ea0399f91a3ca549c2fa1585551c59463cc56a332709b50",
+   "train_bytes": 93213236,
+   "train_cases": 920,
+   "train_path": "independent/KeplerLightCurves_TRAIN.ts",
+   "train_sha256": "0cfe5d5d8fc4aa5f21262e0eb5a60cd997cb1c53314ffa07b59221158426e13c"
+  },
+  "PLAID": {
+   "block": "PLAID",
+   "class_order": [
+    "0",
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 11,
+   "length": 1345,
+   "test_bytes": 12402729,
+   "test_cases": 537,
+   "test_path": "independent/PLAID_eq_TEST.ts",
+   "test_sha256": "7c303691275a3a08b57e5f91f43c272419205dd195aa560397a7ae4283779943",
+   "train_bytes": 12435022,
+   "train_cases": 537,
+   "train_path": "independent/PLAID_eq_TRAIN.ts",
+   "train_sha256": "f0de6df4a12f15e1d68d1e96aff44140850474c2f6425f82e4b491b30b16a987"
+  },
+  "PhoneHeartbeatSound": {
+   "block": "PhoneHeartbeat",
+   "class_order": [
+    "Artifact",
+    "ExtraHLS",
+    "ExtraStole",
+    "Murmur",
+    "Normal"
+   ],
+   "classes": 5,
+   "length": 3053,
+   "test_bytes": 6482759,
+   "test_cases": 182,
+   "test_path": "independent/PhoneHeartbeatSound_TEST.ts",
+   "test_sha256": "4695fb712dabf591df101e878c4330ae61f15ded3b5de8a1aad0762d31544708",
+   "train_bytes": 15139032,
+   "train_cases": 424,
+   "train_path": "independent/PhoneHeartbeatSound_TRAIN.ts",
+   "train_sha256": "04dcdb735b6c6067e4b437d773378c2ab8983638ff782b0ed46b801bec688cb6"
+  },
+  "PickupGestureWiimoteZ": {
+   "block": "Wiimote",
+   "class_order": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 10,
+   "length": 361,
+   "test_bytes": 245228,
+   "test_cases": 50,
+   "test_path": "independent/PickupGestureWiimoteZ_eq_TEST.ts",
+   "test_sha256": "5ebe1b5d8e88758beface64dfc0faa022b2d7ac5495efe4dd6aa73d103c3e393",
+   "train_bytes": 244514,
+   "train_cases": 50,
+   "train_path": "independent/PickupGestureWiimoteZ_eq_TRAIN.ts",
+   "train_sha256": "f7120cb4d4a3bce5369cb6f8ec6c7cf273388c665454f1158daeff4c409f74b0"
+  },
+  "ShakeGestureWiimoteZ": {
+   "block": "Wiimote",
+   "class_order": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "classes": 10,
+   "length": 385,
+   "test_bytes": 260588,
+   "test_cases": 50,
+   "test_path": "independent/ShakeGestureWiimoteZ_eq_TEST.ts",
+   "test_sha256": "89ef5d49180e3a0869ca8aa8269c366729ee1b3ce98c8270eba04a8fa0613c5c",
+   "train_bytes": 255426,
+   "train_cases": 50,
+   "train_path": "independent/ShakeGestureWiimoteZ_eq_TRAIN.ts",
+   "train_sha256": "93227b33ad339111359fad81015a39dbff05317ee3f9f6fb6f0dbd1941a06c79"
+  },
+  "SharePriceIncrease": {
+   "block": "SharePrice",
+   "class_order": [
+    "0",
+    "1"
+   ],
+   "classes": 2,
+   "length": 60,
+   "test_bytes": 1126589,
+   "test_cases": 966,
+   "test_path": "independent/SharePriceIncrease_TEST.ts",
+   "test_sha256": "2232ceecc64ccf6cb6bfeb8df20c7a951ca53d76e5e6c3c93321468c2b3d58a4",
+   "train_bytes": 1124817,
+   "train_cases": 965,
+   "train_path": "independent/SharePriceIncrease_TRAIN.ts",
+   "train_sha256": "ed01c006d7b0c0057ee30546072cd0acefa9c1616f0854e2a6991b21e5fa585e"
+  },
+  "Tools": {
+   "block": "Tools",
+   "class_order": [
+    "chainsaw",
+    "drill",
+    "hammer",
+    "horn",
+    "sword"
+   ],
+   "classes": 5,
+   "length": 2926,
+   "test_bytes": 3876395,
+   "test_cases": 134,
+   "test_path": "independent/Tools_TEST.ts",
+   "test_sha256": "52220ef6a8c3c434ef346651325d32264847622f64c06381b1df0d3aaa2053c3",
+   "train_bytes": 9054303,
+   "train_cases": 310,
+   "train_path": "independent/Tools_TRAIN.ts",
+   "train_sha256": "7306344f2e653597b786ce9dc6b098c0e8ebf3d69dbbe5b8352af97a40ddd650"
+  }
+ }
+}

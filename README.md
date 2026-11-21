@@ -25,6 +25,10 @@ The paper proposes three image representations of a univariate time series, each
 | `ts2i/simulation.py` | Data-generating mechanism of the simulation study |
 | `examples/simulation_example.py` | One replicate of one simulation setting |
 | `analysis/reproduce_tables.py` | Recomputes the numerical results of the paper from the score files |
+| `analysis/simulation_logistic_regression.py` | Simulation study with logistic regression on the pixels in place of the CNN |
+| `analysis/realdata_logistic_regression.py` | The two studies on real data with logistic regression on the pixels in place of the CNN |
+| `analysis/summarize_realdata_logistic.py` | Summaries of the logistic regression on real data, from the score file |
+| `analysis/realdata_studies_metadata.json` | Datasets, files and blocks of the two studies on real data, as read by the script above |
 | `results/` | Test-set scores of the simulation study and of the studies on real data |
 | `tests/test_basic.py` | Basic checks of the package |
 
@@ -85,9 +89,36 @@ with existing image encodings, of the development study and of the independent e
 results by dataset. The adjusted p-values of the comparison of MQI with the existing image encodings are not
 recomputed by the script.
 
+```
+python analysis/simulation_logistic_regression.py
+```
+
+prints the results of the simulation study when the images are classified by logistic regression with an L2
+penalty on the pixels (a sensitivity analysis reported in the paper). With `--run out.csv` the 360 classifiers
+are recomputed, which takes about 15 minutes on two cores; logistic regression does not depend on the PyTorch
+build.
+
+```
+python analysis/summarize_realdata_logistic.py
+```
+
+prints the corresponding results of the two studies on real data from `results/realdata_scores_logistic.csv`:
+the seven representations on the 30 development datasets and the three proposed representations in the
+independent evaluation, with the summaries of the analyses with the CNN beside them. The scores were computed
+with `analysis/realdata_logistic_regression.py` in the stages `encode`, `select`, `final` and `collect` (see its
+docstring), which requires the datasets and took about nine hours of processor time.
+
+The logistic regressions are fitted with scikit-learn's L-BFGS with tolerance 1e-8 and at most 100,000
+iterations, in the coordinates of the row space of the training images when the pixels outnumber the series.
+With the default tolerance of scikit-learn the fits with weak penalties stop before the minimum of the
+penalized likelihood, and scikit-learn leaves SciPy's limit of 15,000 evaluations of the objective in force;
+the scripts remove this limit.
+
 | File | Rows |
 |---|---|
 | `results/simulation_scores.csv` | 6 settings x 20 replicates x 3 representations |
+| `results/simulation_scores_logistic.csv` | The same, with logistic regression on the pixels in place of the CNN |
+| `results/realdata_scores_logistic.csv` | Logistic regression on the pixels: 30 development datasets x 7 representations (divisions of seeds 101, 202 and 303 for the proposed representations, 101 and 202 for the existing encodings) and 17 datasets of the independent evaluation x 3 representations x 3 divisions |
 | `results/existing_encodings_scores.csv` | 30 development datasets x seeds 101 and 202 x MQI, CWT, GAF, MTF and RP |
 | `results/development_scores.csv` | 30 development datasets x 3 seeds x 3 representations |
 | `results/independent_scores.csv` | 17 datasets of the independent evaluation (in nine blocks) x 3 seeds x 3 representations |
